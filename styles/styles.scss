@@ -1,2 +1,15 @@
 @import "pages/index.scss";
 @import "pages/product.scss";
+* {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+.header {
+  background-color: #000000;
+  color: aliceblue;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
