@@ -10,13 +10,20 @@ block eod
 
 block content
   main
-    div Write your content here
     if error
-      p Ups there is an error, try again
-      p= error
+      div(class="error")
+        p Ups there is an error, try again
+        p= error
+        a(href="/" class="button") Try again
     else
-      ul
-        li Check console output to see all available properties.
-        li= product.name
-        li= product.price
-        li= product.description
+      table
+        tr
+          td Product name:
+          td= product.name
+        tr
+          td Product price:
+          td= product.price
+        tr
+          td Product Info:
+          td= product.description
+      a(href="/" class="button") Try another product

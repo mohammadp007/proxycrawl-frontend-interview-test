@@ -21,12 +21,12 @@ $(document).ready(() => {
       const elem = document.createElement("li");
       elem.innerText = "Invalid url!";
       errors.appendChild(elem);
-      evt.target.disabled = false;
     }
 
     if(errors.children.length > 0) {
       error.innerHTML = "";
       error.append(errors);
+      evt.target.disabled = false;
     } else {
       error.innerHTML = "";
       form.submit();

@@ -14,7 +14,6 @@ router.post('/product',
           throw new Error('Invalid ProxyCrawl status code: ' + response.statusCode + '\n' + response.body);
         } else {
           ctx.product = JSON.parse(response.body).body;
-          console.log('Available product properties: ', ctx.product);
         }
         next();
       })
